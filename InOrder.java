@@ -4,6 +4,13 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		//// Write your code here
+		int HighestNum = -1;
+		int RandomNum = (int) (Math.random() * 10);
+		while (RandomNum >= HighestNum)
+		{
+			System.out.println(RandomNum);
+			HighestNum = RandomNum;
+			RandomNum = (int) (Math.random() * 10);
+		}
 	}
 }
